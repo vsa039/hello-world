@@ -13,7 +13,8 @@
     staged files are files ready to be committed to the repository you are working on.
     * adding commits keep track of progress and changes as we work. 
     * git considers commit a change point or "save point". it is a point in project you can go back to if you find a bug, or want to make a change
-    
+    * sometiems when making small changes, it is possible to commit changes directly, skipping the staging environment. -a option will 
+      automatically eveage every changed, already tracked file
 
 
 -->
@@ -21,10 +22,12 @@
     
     git init - initialize a git repository
     git add . - add files to staged environment ( you can add one, more than oen or all files)
-
+    git commit -m "message" - commit staged files to environment along with a message
+    git status -- short - check of status changes in more compact way
 -->
 <h1>Hello world!</h1>
 <p>This is the first file in my new Git Repo.</p>
+<p>A new line in our file!</p>
 
 
 </body>
